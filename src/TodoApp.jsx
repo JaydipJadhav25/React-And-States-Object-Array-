@@ -136,7 +136,8 @@ console.log("todos : " , todos);
         {
             todos?.map((todo ) => <>
             <li style={{
-    backgroundColor: todo.isdone ? "green" : "red"
+    backgroundColor: todo.isdone ? "green" : "red",
+    textDecorationLine : todo.isdone ? "line-through" : "none",
            }} key={todo.id}>
                 {
                     todo.name 
